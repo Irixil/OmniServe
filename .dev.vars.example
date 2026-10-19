@@ -1,0 +1,19 @@
+# Comma-separated company account identifiers or authenticated email addresses.
+STAFF_USER_IDS=oai-user-id-1,oai-user-id-2
+STAFF_EMAILS=project.manager@company.example,team.member@company.example
+
+# A smaller list allowed to publish or revoke public knowledge and cases.
+PUBLISHER_USER_IDS=oai-user-id-1
+PUBLISHER_EMAILS=project.manager@company.example
+
+# Project leads may reassign conversations between configured staff members.
+PROJECT_LEAD_USER_IDS=oai-user-id-1
+PROJECT_LEAD_EMAILS=project.manager@company.example
+
+# Server-side model configuration. Keep real keys only in the protected local or deployment secret store.
+AI_MODEL_ENABLED=false
+DEEPSEEK_API_KEY=
+DEEPSEEK_BASE_URL=https://api.deepseek.com
+DEEPSEEK_MODEL=deepseek-v4-flash
+AI_VISION_ENABLED=false
+DEEPSEEK_VISION_MODEL=deepseek-v4-flash-vision-exp

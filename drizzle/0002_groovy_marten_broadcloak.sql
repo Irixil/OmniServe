@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX `idx_projects_owner_code` ON `projects` (`owner_id`,`project_code`);

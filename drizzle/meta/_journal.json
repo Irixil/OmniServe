@@ -1,0 +1,90 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1787566645696,
+      "tag": "0000_lean_george_stacy",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1787715795888,
+      "tag": "0001_supreme_hulk",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1787716016072,
+      "tag": "0002_groovy_marten_broadcloak",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1787847441061,
+      "tag": "0003_remarkable_pyro",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1787849222507,
+      "tag": "0004_plain_corsair",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1788148903022,
+      "tag": "0005_lying_sway",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1788191403816,
+      "tag": "0006_abnormal_silhouette",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1788351551154,
+      "tag": "0007_gorgeous_skullbuster",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "6",
+      "when": 1788352111514,
+      "tag": "0008_rapid_may_parker",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "6",
+      "when": 1788353813611,
+      "tag": "0009_strong_winter_soldier",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "6",
+      "when": 1788503784594,
+      "tag": "0010_clever_screwball",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "6",
+      "when": 1792406600646,
+      "tag": "0011_dusty_proemial_gods",
+      "breakpoints": true
+    }
+  ]
+}

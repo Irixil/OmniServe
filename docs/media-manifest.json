@@ -1,0 +1,75 @@
+{
+  "captured_on": "2026-10-19",
+  "files": [
+    {
+      "path": "public/cases/cultural-dusk.jpg",
+      "bytes": 371022,
+      "sha256": "de39ba02a49edccf8007d3ac46049db61bb9f62d463bc8ed5271b7502f388e57"
+    },
+    {
+      "path": "public/cases/hospitality-golden-hour.jpg",
+      "bytes": 537947,
+      "sha256": "3dff6fc882a2ef102d787012f23800adc06e862be4ab3fedc89825c6a63eada1"
+    },
+    {
+      "path": "public/cases/mixed-use-day.jpg",
+      "bytes": 534893,
+      "sha256": "82cfd9602b2133527f3a0080fa48694cdc9d7c30fd214c7b034214895dc75704"
+    },
+    {
+      "path": "public/cases/office-overcast.jpg",
+      "bytes": 483843,
+      "sha256": "9799df97d8b8caeff65a9f4aa55b529a9fa59ea39ab7e00bdb3b881b7ea0a891"
+    },
+    {
+      "path": "public/cases/residential-blue-hour.jpg",
+      "bytes": 454748,
+      "sha256": "182cb4aeec58a8acec1dbf3fdc5c0905b4ce25a5d11a1f6304e83551c7397de5"
+    },
+    {
+      "path": "public/cases/retail-evening.jpg",
+      "bytes": 556002,
+      "sha256": "d5b82beb06e19f87e6df2150e77feb0924fb7d226cb620677ed3d5b6d51eaa45"
+    },
+    {
+      "path": "public/generated/civic-plaza-dusk.png",
+      "bytes": 2929951,
+      "sha256": "ad537fd4210d67169355a0bc505719aa441e574d58eaa598e5597eab85d38c1a"
+    },
+    {
+      "path": "public/generated/coastal-hospitality-aerial.png",
+      "bytes": 3028040,
+      "sha256": "e570c698a65049b9d95962e5b7b04246d32d685ab6af560a77f995aa6c97fbc5"
+    },
+    {
+      "path": "public/generated/courtyard-lounge-interior.png",
+      "bytes": 2853774,
+      "sha256": "4e9d49f512aafd769c58e86b3fc96fbf825e24004947870c6cb1b533d65cf148"
+    },
+    {
+      "path": "public/generated/cultural-pavilion-walkthrough.png",
+      "bytes": 2660075,
+      "sha256": "526c053103b918b29ae9e4c5712613d7bef2e1eb9a114e82d79bc0cdcd6a19b4"
+    },
+    {
+      "path": "docs/images/customer-mobile.jpg",
+      "bytes": 66536,
+      "sha256": "fb3767318fb005c53e3c58f3f3d777987bb434d7723017a2af9d5fd4152e9b51"
+    },
+    {
+      "path": "docs/images/customer-portal.jpg",
+      "bytes": 151671,
+      "sha256": "c31900033591eda92f2b989b4eb9676e81e938460ca71b7decc5d52169297e96"
+    },
+    {
+      "path": "docs/images/customer-reply.jpg",
+      "bytes": 180643,
+      "sha256": "4e4ac7eae9f53a1d5e95027cb98bba7de1c2edbab5e43bd808a2c7b99a8cbfcc"
+    },
+    {
+      "path": "docs/images/staff-review.jpg",
+      "bytes": 142800,
+      "sha256": "06df7ca545abb746e30aa4b5471e9475fb596b95f976865b31ee0fa59053d44a"
+    }
+  ]
+}

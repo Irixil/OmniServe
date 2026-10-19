@@ -1,0 +1,1 @@
+ALTER TABLE `conversations` ADD `expires_at` text DEFAULT '' NOT NULL;
