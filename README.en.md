@@ -1,65 +1,69 @@
 # OmniServe
 
-**From a project question to a reviewed reply—without losing the human in the loop.**
+**AI-assisted overseas enquiries and bilingual reply review for architectural-visualization teams.**
 
-Customers get a clear place to ask about architectural-visualization work, share a reference image, and request a follow-up. Project staff get the same conversation context, practical handoff tools, and a bilingual reply workflow they control.
+Customers ask about a project, share a reference image, and request follow-up. Staff take over the same conversation, revise a bilingual draft, and send the English reply after confirmation.
 
-[中文](README.md) · [English](README.en.md)
+[中文](README.md) · [English](README.en.md) · [Run locally](#run-locally)
 
-![OmniServe customer portal showing a sample project enquiry](docs/images/customer-portal.jpg)
+![Complete workflow example: customer enquiry, staff takeover, bilingual draft, staff confirmation and English reply, then customer receipt](docs/images/workflow.gif)
 
-*Example conversation and interface only. No real customer data or commissioned project is shown.*
+*Actual interface keyframes from a fictional enquiry; the manual review path is shown and waiting time is compressed. AI is disabled by default.*
 
-## What it does
+**Customer enquiry → Staff takeover → Bilingual draft → Confirm and send English → Customer receives the reply**
 
-### For customers
+- **Context follows handoff:** Staff can review the customer’s messages, attachments, and enquiry context when taking over.
+- **Sent only after confirmation:** Staff revise the English reply and Chinese review meaning; only an English version confirmed by an authorized staff member can be sent.
+- **Follow up across time zones:** Choose from 50 common city-based time zones or enter another valid IANA time zone. The browser suggestion is editable and is not precise location data.
 
-- Ask about architectural stills, animation, visual direction, and post-production in one persistent conversation.
-- Share one JPEG, PNG, or WebP reference image per message (up to 10 MB).
-- See answers grounded in published project knowledge, with source references where available.
-- Request a human follow-up and choose from 50 common city-based time-zone options, or enter another valid IANA time zone. The browser’s time-zone suggestion is editable and is not precise location data.
+## What customers and staff can do
 
-### For project staff
+### Customer enquiries
 
-- Take over an enquiry with its messages, attachments, and context in one workspace.
-- Review the customer’s local date and time alongside your own time zone.
-- Prepare or manually write an English reply with a Chinese review meaning; revise either side, confirm the current version, then send the English reply.
-- Track lead status, priority, next action, and notes; complete or reopen a conversation and reassign it when permitted.
+- Ask about architectural stills, animation and walkthroughs, visual direction, and post-production in a persistent conversation.
+- Attach one JPEG, PNG, or WebP reference image per message, up to 10 MB.
+- When enabled, the public assistant can answer from currently published knowledge and show sources where applicable; customers can also request a staff follow-up.
+- Contact details are optional for an enquiry. They are collected only when a customer requests follow-up and gives explicit consent.
 
-![Staff workspace reviewing a sample customer enquiry and reply](docs/images/staff-review.jpg)
+### Staff follow-up
 
-*Example staff review using fictional QA data. It does not depict a real customer or project.*
+- Take over a conversation and review the original messages, attachments, lead summary, and the customer’s local date and time.
+- Generate or manually write an English reply with a Chinese review meaning, then save revisions as a new version.
+- Review and confirm the current draft before sending its English version. Replies are never sent automatically.
+- Update lead status, priority, next action, and notes; complete, reopen, or reassign a conversation where permitted.
 
-## A human-controlled workflow
+### Knowledge and AI boundaries
 
-```mermaid
-flowchart LR
-  A[Customer enquiry] --> B[Published knowledge and approved cases]
-  B --> C{Enough evidence?}
-  C -- Yes --> D[Grounded response with sources]
-  C -- No or human requested --> E[Staff takes over]
-  E --> F[English reply + Chinese review meaning]
-  F --> G[Staff edits and confirms]
-  G --> H[Staff sends English reply]
-```
+Public retrieval is limited to currently published knowledge and cases approved for public display. Enquiries can be handed to staff when evidence is insufficient, a customer asks for a person, or commercial judgment is required. The system does not quote prices, confirm schedules or delivery quality, or approve legal or contract terms.
 
-AI features are **disabled by default**. The full enquiry, handoff, manual bilingual drafting, confirmation, and send flow remains available without model configuration. With a configured model, the public assistant can answer from published knowledge. After human takeover, AI-assisted replies remain drafts until the authorized employee confirms and sends them. See the operations guide for model integration details.
+AI features are disabled by default. A model participates only after an operator configures and enables it on the server. Without model configuration, customers can still enquire, staff can take over, write bilingual drafts manually, confirm, and send replies. When enabled, AI-assisted staff replies remain drafts until an authorized staff member confirms and sends them. Automated assistance may process messages and images to help prepare replies; see the [privacy notice](app/privacy/page.tsx).
 
-The assistant can retrieve only currently published knowledge and cases approved for public display. It does not quote prices, confirm schedules or delivery quality, or approve legal or contract terms. Questions needing more evidence or human judgment can be handed to the project team.
+<details>
+<summary>More interface views</summary>
 
-![Example customer conversation with a project-team reply](docs/images/customer-reply.jpg)
+![Customer project-enquiry entry](docs/images/customer-portal.jpg)
 
-*Illustrative conversation and reply. No real customer exchange is shown.*
+*Example of the customer-facing entry point.*
 
-![Mobile customer enquiry example](docs/images/customer-mobile.jpg)
+![Staff taking over an enquiry and reviewing a bilingual draft](docs/images/staff-review.jpg)
 
-*Mobile interface example with fictional enquiry content.*
+*Staff workspace example with fictional QA records.*
+
+![Customer receives the confirmed English reply](docs/images/customer-reply.jpg)
+
+*Reply example for a fictional enquiry.*
+
+![Mobile customer enquiry and reply](docs/images/customer-mobile.jpg)
+
+*Mobile example at a 390 × 844 viewport with fictional enquiry content.*
+
+</details>
 
 ## Privacy and project boundaries
 
-Automated assistance may process messages and images to help prepare a response. Contact details are requested only when a customer asks for follow-up and gives explicit consent. Conversation access expires after seven days; expired records are removed later through routine cleanup. See the [privacy notice](app/privacy/page.tsx) for details.
+Contact details are collected only when a customer requests follow-up and gives explicit consent. Access to conversations, images, and linked contact details expires after seven days; expired records are removed later through routine cleanup. See the [privacy notice](app/privacy/page.tsx).
 
-The visual work shown in this repository is concept visualization, not a claim of client commission or delivery. This repository is a sanitized reconstruction of an overseas customer-support workflow. See [media sources and usage notes](docs/MEDIA.md).
+This repository is a sanitized reconstruction of an overseas customer-support workflow. Visuals in the repository are concept studies, not real client commissions or deliveries; all enquiries and contacts in screenshots are fictional examples. See [image sources and usage notes](docs/MEDIA.md).
 
 ## Run locally
 
@@ -75,8 +79,8 @@ npm run dev -- --host localhost --port 3000
 
 Keep real credentials in a protected local secret store. Do not commit `.dev.vars` or provider keys. Model and image-analysis switches in the example configuration are off by default.
 
-A clean installation from the public npm registry with an empty npm user configuration has passed. For setup detail and operational configuration, see [Operations](docs/OPERATIONS.md); for the exact local verification scope and what remains untested, see [Verification](docs/VERIFICATION.md).
+A clean installation using the official public npm registry and an empty npm user configuration has passed. For setup and operation, see [OPERATIONS.md](docs/OPERATIONS.md); for local verification scope and unverified items, see [VERIFICATION.md](docs/VERIFICATION.md).
 
 ## Built with
 
-Next.js, React, TypeScript, Vinext, Cloudflare’s Vite integration, D1/R2-compatible storage interfaces, and Orama retrieval. Knowledge search uses lexical retrieval and can combine it with vector similarity when embeddings are configured.
+Next.js, React, TypeScript, Vinext, Cloudflare’s Vite integration, D1/R2-compatible storage interfaces, and Orama. Knowledge retrieval uses lexical search and can combine it with vector similarity when embeddings are configured.

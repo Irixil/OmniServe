@@ -1,4 +1,10 @@
-# Screenshots and visual sources
+# Workflow GIF, screenshots and visual sources
+
+`docs/images/workflow.gif` is a 25-second, 1120 × 800 animated walkthrough made from 13 actual browser states captured on 2026-10-19. It covers customer enquiry and consent, staff takeover, explicit manual context review, English/Chinese drafting, saving, confirmation, sending and customer receipt of the English reply. It loops and uses 21 encoded frames, including markers at the actual click targets.
+
+The edit crops navigation/whitespace, resizes captures, adds bilingual step captions and compresses waiting time. It does not replace UI text or draw simulated success states. The same fictional Melbourne hotel enquiry is used throughout. Both model flags were off; the GIF demonstrates the manual review path, not AI generation. Chinese review text stays in the staff workspace. The GIF checksum is in [media-manifest.json](media-manifest.json).
+
+## Static screenshots
 
 The four images in `docs/images/` are actual browser captures of this source publication running with fresh local storage on 2026-10-19. They have not been composited into mock interfaces. Alex Morgan, Harbour Design Studio and the Melbourne hotel enquiry are fictional; `alex@example.com` is an illustrative address. The visible sample-data badge is intentional.
 

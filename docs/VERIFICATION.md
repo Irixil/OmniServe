@@ -1,5 +1,7 @@
 # Verification scope
 
+The 2026-10-19 README GIF update repeats the synthetic customer-to-staff manual flow in fresh isolated D1/R2 storage with the same published business source. Captured states cover takeover, manual context review, bilingual draft save/confirmation, sending and customer refresh. The customer-visible English exactly matches the confirmed reply; the Chinese meaning and internal draft label are absent from the customer view. The 25-second GIF decodes through all 21 frames and loops; captions identify the manual path and compressed waits. Only documentation and media change in this update, so the prior application build/check results below retain their original scope.
+
 Checked on 2026-10-19 against the sanitized source in this repository. This is a source publication, not a website deployment or a claim of production acceptance.
 
 ## Passed for the published source

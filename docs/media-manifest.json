@@ -70,6 +70,11 @@
       "path": "docs/images/staff-review.jpg",
       "bytes": 142800,
       "sha256": "06df7ca545abb746e30aa4b5471e9475fb596b95f976865b31ee0fa59053d44a"
+    },
+    {
+      "path": "docs/images/workflow.gif",
+      "bytes": 855251,
+      "sha256": "a9da917c301332d8de548fe6b6c970118caf6276444caf7e5caa0a579b8934de"
     }
   ]
 }
