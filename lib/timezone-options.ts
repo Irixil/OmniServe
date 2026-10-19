@@ -55,4 +55,3 @@ export const TIME_ZONE_GROUPS: TimeZoneGroup[] = [
 ];
 
 export const TIME_ZONE_LABELS = new Map(TIME_ZONE_GROUPS.flatMap((group) => group.options.map(({ value, label }) => [value, label] as const)));
-
